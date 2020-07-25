@@ -194,7 +194,31 @@ function whatsMyGrade(grade){
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+function countTheVowels(string){
+    let lowerCaseString = string.toLowerCase();
+    let stringArray = lowerCaseString.split('')
+    var vowelNum = 0;
 
+    stringArray.forEach(function vowelCount(i){
+        if(i === 'a'){
+            vowelNum++
+        }
+        if(i === 'e'){
+            vowelNum++
+        }
+        if(i === 'i'){
+            vowelNum++
+        }
+        if(i === 'o'){
+            vowelNum++
+        }
+        if(i === 'u'){
+            vowelNum++
+        }
+    })
+
+    console.log(vowelNum)
+}
 
 
 
