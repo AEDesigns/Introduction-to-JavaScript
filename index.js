@@ -15,6 +15,7 @@ if(votingAge > 18){
 // value assigned to a second variable (no function required)
 
 let a; 
+let b;
 
 if (a != b){
     a = b
@@ -67,7 +68,9 @@ function ageToDogYears(age){
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-
+function foodToFeed(weight, age){
+    return 
+}
 
 
 
@@ -78,20 +81,68 @@ function ageToDogYears(age){
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+const userChoice = getChoice => {
+    input = getChoice.toLowerCase();
+    if(input === 'rock' || input === 'paper' || input === 'scissors'){
+        return input
+    } else {
+        console.log('Choose a valid option')
+    }
+}
+
+function setCompChoice(){
+    switch(Math.floor(Math.random() * 3)){
+        case 0:
+            return 'rock';
+        case 1: 
+            return 'paper';
+        case 2: 
+            return 'scissors';
+    }
+}
+
+function whoWins(userChoice,computerChoice) {
+    if (userChoice === computerChoice) {
+      return 'It\'s a tie!';
+    } else if (userChoice === 'rock') {
+      if (computerChoice === 'paper') {
+        return 'Computer wins!';
+      } else {
+        return 'You win!';
+      }
+    } else if (userChoice === 'paper'){
+      if (compterChoice === 'scissors') {
+        return 'Computer wins!';
+      }else {
+        return 'You win!';
+      }
+    } else if (userChoice === 'scissors') {
+      if (computerChoice === 'rock') {
+        return 'Computer wins!';
+      } else {
+        return 'You win!';
+      }
+    } else if (userChoice === 'bomb') {
+      return 'You win!';
+    }
+  }
   
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
+function convertKmtoMiles(kilometers){
+    return kilometers * 0.621371
+}
 
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
   
-
+function convertFootToCm(foot){
+    return foot * 30.48
+}
 
 
 
