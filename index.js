@@ -11,15 +11,23 @@ if(votingAge > 18){
 }
 
 
-//Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
+//Task b: declare a variable and then use a conditional to change the value of that variable based on the 
+// value assigned to a second variable (no function required)
 
+let a; 
+
+if (a != b){
+    a = b
+} else {
+    console.log('They are the same value')
+}
 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
+let stringToNum = parseInt("1999");
 
 
 
