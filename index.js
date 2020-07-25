@@ -151,7 +151,12 @@ function convertFootToCm(foot){
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-
+function ninetyNineBottles(bottles){
+    for(let i = bottles; i > 0; i--){
+        let newBottles = i;
+        console.log(`${newBottles} bottles of soda on the wall, ${newBottles} bottle of soda, take one down and pass it around, ${newBottles} bottle of soda on the wall`)
+    }
+}
 
 
 
@@ -164,7 +169,23 @@ function convertFootToCm(foot){
 //60s should be D 
 //and anything below 60 should be F
   
-
+function whatsMyGrade(grade){
+    if(grade >= 90){
+        console.log('You got an A')
+    } 
+    if(grade >= 80 && grade < 90){
+        console.log('You got a B')
+    }
+    if(grade >= 70 && grade < 80){
+        console.log('You got a C')
+    }
+    if(grade >= 60 && grade < 70){
+        console.log('You got a D')
+    }
+    if(grade < 60){
+        console.log("You got an F")
+    }
+}
   
   
 
