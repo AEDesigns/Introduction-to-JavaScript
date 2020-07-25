@@ -33,7 +33,9 @@ let stringToNum = parseInt("1999");
 
 //Task d: Write a function to multiply a*b 
 
-
+function multiplyNums(a, b){
+    return a * b
+}
 
 
 
