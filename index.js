@@ -35,7 +35,7 @@ let stringToNum = parseInt("1999");
 //Task d: Write a function to multiply a*b 
 
 function multiplyNums(a, b){
-    return a * b
+    console.log(a * b)
 }
 
 
@@ -45,7 +45,7 @@ function multiplyNums(a, b){
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
 function ageToDogYears(age){
-    return age * 7
+    console.log(age * 7)
 }
 
 
@@ -68,9 +68,25 @@ function ageToDogYears(age){
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
-function foodToFeed(weight, age){
-    return 
-}
+function dogFeed(weight, age) {
+    if (age < 4 / 12) {
+      console.log(weight * 0.1);
+    } else if (age < 7 / 12) {
+      console.log(weight * 0.05);
+    } else if (age < 1) {
+      console.log(weight * 0.04);
+    } else if (weight <= 5 && age >= 1) {
+      console.log(weight * 0.05);
+    } else if (weight <= 10 && age >= 1) {
+      console.log(weight * 0.04);
+    } else if (weight <= 15 && age >= 1) {
+      console.log(weight * 0.03);
+    } else {
+      console.log(weight * 0.02);
+    }
+  }
+  
+  dogFeed(15, 1);
 
 
 
